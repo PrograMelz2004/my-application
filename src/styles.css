@@ -1,0 +1,89 @@
+/* Theme Variables */
+:root {
+    --primary-color: #a17e50;
+    --secondary-color: #a17e50;
+    --light-color: #ffffff;
+    --background-color: #f5f5f5;
+    --navbar-bg: #f1f1f1;
+    --footer-bg: #a17e50;
+    --border-color: #e0e0e0;
+    --border-radius: 8px;
+  }
+  
+  body.dark-theme {
+    --primary-color: #e1a455;
+    --secondary-color: #e1a455;
+    --background-color: #121212;
+    --navbar-bg: #1e1e1e;
+    --footer-bg: #e1a455;
+    --light-color: #e0e0e0;
+  }
+  
+  /* Reset Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--secondary-color);
+    background: var(--background-color);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Links */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background: var(--primary-color);
+    color: var(--light-color);
+  }
+  
+  button:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* Inputs */
+  input, select, textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    width: 100%;
+    background: var(--light-color);
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+  }
+  

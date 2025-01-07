@@ -1,0 +1,9 @@
+<div class="main">
+    <div class="container">
+        <h1>Questions and Answers</h1>
+        <div *ngFor="let question of questions; let i = index" class="qa">
+            <h2>{{i + 1}}. {{question.question}}</h2>
+            <p><strong>Answer:</strong> {{question.answer}}</p>
+        </div>
+    </div>
+</div>
